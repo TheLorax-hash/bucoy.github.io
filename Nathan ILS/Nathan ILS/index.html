@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel = "stylesheet" href = "styles.css">
+
+    
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+<div id="banner">
+ <div id="Name">
+<h1>Nathan Xander U. Bucoy</h1>
+</div>
+<div id="quote">
+    <h2 class="quoteanimation">"I want to live a happy life"</h2>
+</div>
+</div>
+
+<div class="titles">
+<h2>Likes</h2>
+</div>
+<div class="cardcontainer">
+
+    <div class = "card">
+        <div id="card content">
+                <h3>GAMES</h3>
+                <p>Any rythmn game</p> 
+                <p>Blue Archive</p> 
+                <p>Destiny 2</p> 
+                <p>Warframe</p> 
+                <p>Apex Legends</p> 
+                <p>Hollow Knight</p> 
+        </div>
+    </div>
+
+    <div class = "card">
+        <div id="card content">
+                <h3>MUSIC</h3>
+                <p>Creepy Nuts</p> 
+                <p>Takayan</p> 
+                <p>Zutomayo</p> 
+                <p>Yoasobi</p> 
+                <p>Frederic</p> 
+                <p>Wanuka</p> 
+                <p>Tuyu</p> 
+                <p>Eve</p> 
+                <p>Yoh Kamiya</p> 
+        </div>
+    </div>
+
+    <div class = "card">
+        <div id="card content">
+                <h3>ANIME & MANGA</h3>
+                <p>Beyond the Boundary</p> 
+                <p>Oregairu</p>
+                <p>Tonikawa</p>
+                <p>Call of the Night</p>
+                <p>Dandadan</p>
+                <p>Solo Leveling</p>
+                <p>Anything popular </p>
+        </div>
+    </div>
+
+
+</div>
+<div class="titles">
+    <h2>Hobbies</h2>
+</div>
+
+<div id="List">
+        <li>Playing games </li>
+        <li>Reading manga </li>
+        <li> Watching anime </li>
+        <li> Sitting in front of my desk doing nothing</li>
+</div>
+
+<div class="titles">
+    <h2>Dislikes</h2>
+</div>
+
+<div id="List">
+    <li>Lag</li>
+    <li>Cockroaches</li>
+    <li>People</li>
+</div>
+
+<div class="titles">
+    <h2>Fun Facts</h2>
+</div>
+
+
+<div id="buttoncontainer">
+    
+<button type="button" class="collapse">Fun Fact #1</button>
+    <div class="button content">
+        <p><span class="facts">I study japanese everyday</span></p>
+    </div>
+
+<button type="button" class="collapse">Fun Fact #2</button>
+    <div class="button content">
+        <p><span class="facts">I plan on learning French or Korean in th future</span></p>
+    </div>
+
+<button type="button" class="collapse">Fun Fact #3</button>
+    <div class="button content">
+        <p><span class="facts">Currently learning CSS and HTML</span></p>
+    </div>
+</div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapse");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+
+</body>
+</html>
