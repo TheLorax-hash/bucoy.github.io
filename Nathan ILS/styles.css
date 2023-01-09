@@ -1,0 +1,166 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: rgb(30, 29, 31);
+    background-image: radial-gradient(rgb(47, 40, 47) 10%, transparent 11%),
+    radial-gradient(#373037 10%, transparent 11%);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    background-repeat: repeat;
+    font-family: sans-serif;
+}
+
+#banner{
+    padding-top: 30px;
+    padding-bottom: -60px;
+    height: 200px;
+    background-color: #3e3b41;
+    background-image: url("banner .jpeg");
+    background-size: contain;
+    border: 5px solid rgb(146, 55, 168);
+    box-shadow: -2px 3px 10px 1px #8b5eb8,-4px 6px 10px 5px #241d2b ;
+
+}
+
+div{
+    margin: 20px;
+}
+
+#Name{
+    text-align: center;
+    color: #6a38ff;
+    text-shadow:3px 2px #7721ac,-2px -1px rgb(206, 159, 240);
+}
+
+/*animation is copy pasted*/
+#quote{
+    text-align: center;
+    --bg-size: 400%;
+    --color-one: rgb(88, 255, 249);
+    --color-two: rgb(246, 72, 229);
+    --color-three:rgb(109, 255, 153);
+    font-size: clamp(1rem, 2vmin, 2rem);
+    background: linear-gradient(
+                  90deg,
+                  var(--color-one),
+                  var(--color-two),
+                  var(--color-one)
+                ) 0 0 / var(--bg-size) 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: move-bg 8s infinite linear;
+}  
+@media (prefers-reduced-motion: no-preference) {
+    .boujee-text {
+      animation: move-bg 8s linear infinite;
+    }
+    @keyframes move-bg {
+      to {
+        background-position: var(--bg-size) 0;
+      }
+    }
+  }
+
+
+
+.titles{
+    margin-left: 120px;
+    padding-top: 30px;
+    font-family: sans-serif;
+    background: linear-gradient(180deg,#f092eb 65%,#b781ff );
+    -webkit-background-clip:text;
+    -moz-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:  transparent;
+    -moz-text-fill-color: transparent;
+    
+}
+
+.cardcontainer{
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    
+
+}
+
+.card{
+    position: relative;
+    width: 17rem;
+    height: 23rem;
+    background: linear-gradient(120deg, #649df8,#7e30c8 50%,#8307f7);
+    border: 3px solid rgb(40, 38, 86);
+    border-radius: 10px;
+    box-shadow: -4px 6px 10px 2px #313032;
+    content-visibility: hidden;
+    
+}
+
+.card:hover{
+    background: rgb(71, 53, 72);
+    content-visibility: visible;
+}
+
+#card content,p , h3{
+    color: rgb(245, 110, 254);
+    font-weight: 400;
+    
+}
+
+li{
+    margin: 10px;
+    color: white;
+}
+
+#List{
+    background-color: #3b383e;
+    margin-left: 120px;
+    width: fit-content;
+    padding: 40px;
+    border: 3px solid violet;
+    box-shadow: -2px 3px 10px 1px #8b5eb8,-4px 6px 10px 5px #241d2b ;
+}
+
+#buttoncontainer{
+    align-items: center;
+    margin-bottom: 250px;
+}
+
+.collapse{
+    margin:30px 5px 5px 200px;
+    background-color: #42394a;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 20px;
+    width: 120px;
+    text-align: center;
+    font-size: 15px;
+    outline:none;
+    border:none;
+}
+
+.active, .collapsible:hover {
+    background-color: rgb(234, 182, 255);
+  }
+
+  .content {
+    margin-left: 500px;
+    position: absolute;
+    padding: 0 18px;
+    height: fit-content;
+    width: fit-content;
+    display: none;
+    overflow: hidden;
+    background-color: #58465d;
+    border: 2px solid rgb(222, 138, 255);
+  }
+
+  .facts{
+    color: violet;
+  }
