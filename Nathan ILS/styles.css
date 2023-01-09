@@ -18,7 +18,7 @@ body{
     padding-bottom: -60px;
     height: 200px;
     background-color: #3e3b41;
-    background-image: url("banner .jpeg");
+    background-image: url('../Nathan ILS/banner.jpg');
     background-size: contain;
     border: 5px solid rgb(146, 55, 168);
     box-shadow: -2px 3px 10px 1px #8b5eb8,-4px 6px 10px 5px #241d2b ;
